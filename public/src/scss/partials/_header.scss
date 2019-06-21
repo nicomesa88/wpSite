@@ -1,0 +1,45 @@
+.site__header {
+    @apply .text-white;
+    @apply relative;
+    background: linear-gradient(180deg, rgba(25,122,142,1) 0%, rgba(164,239,234,1) 100%);
+    height: 30rem;
+}
+
+.site__header h1 {
+    @apply .mb-3;
+    @apply .uppercase;
+}
+
+.site__header main {
+    @apply .mt-12;
+}
+
+.header__contents {
+    @apply .flex;
+    @apply .justify-between;
+}
+
+.header__contents {
+    @apply .pt-8;
+}
+
+.header__contents,
+.site__header main {
+    @apply .px-8;
+}
+
+
+.site__logo {
+    @apply .w-40;
+}
+
+.mountain__range {
+    @apply .w-full;
+    @apply .absolute;
+    @apply .bottom-0;
+}
+
+.ocean__water {
+    top: -0.56rem;
+    @apply relative;
+}

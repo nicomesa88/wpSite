@@ -1,0 +1,30 @@
+.search__form input[type=text] {
+    @apply .appearance-none;
+    @apply .rounded;
+    @apply .py-2;
+    @apply .px-3;
+    @apply .text-ashGray;
+}
+
+.search__form-menu {
+    @apply .flex;
+    @apply .shadow-lg;
+}
+
+.search__form-menu figure {
+    @apply .bg-viridianGreen;
+    @apply .flex;
+    @apply .items-center;
+    @apply .justify-center;
+    @apply .p-3;
+    @apply .flex-grow;
+}
+
+.search__form-menu figure svg {
+    @apply .w-6;
+}
+
+.search__form-menu input {
+    @apply .w-4/5;
+    border: 1px solid rgba(204, 204, 204, 0.3);
+}

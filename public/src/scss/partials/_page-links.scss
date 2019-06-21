@@ -1,0 +1,43 @@
+.page__links {
+    @apply .my-6;
+}
+
+.page__links button {
+    @apply .flex;
+    @apply .w-full;
+    @apply .relative;
+    @apply .items-center;
+    @apply .justify-center;
+    @apply .shadow-lg;
+    @apply .p-16;
+    @apply .text-gray;
+    @apply .font-bold;
+    @apply .bg-white;
+    @apply .outline-none;
+    @apply .appearance-none;
+    transition: all 0.3s ease-out;
+}
+
+.page__links button > * {
+    @apply .pointer-events-none;
+}
+
+.page__links button:not(:last-of-type) {
+    @apply .mb-4;
+}
+
+.page__links button main {
+    @apply absolute;
+    @apply .opacity-0;
+}
+
+.page__links h4 {
+    @apply .uppercase;
+    transition: all 0.3s ease-in-out 0.2s;
+}
+
+.page__links button.active h4 {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition-delay: 0.3s;
+}

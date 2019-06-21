@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap');
+
+html {
+    @apply .font-body;
+    @apply .leading-tight;
+}
+
+h1 {
+    @apply .text-2xl;
+    @apply .font-black;
+    @apply .tracking-widest;
+}

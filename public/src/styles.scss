@@ -1,0 +1,22 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+// partials
+@import "./scss/partials/animations";
+@import "./scss/partials/typography";
+@import "./scss/partials/layout";
+@import "./scss/partials/header";
+@import "./scss/partials/nav-and-search";
+@import "./scss/partials/site-menu";
+@import "./scss/partials/search-form";
+@import "./scss/partials/page-links";
+@import "./scss/partials/value-stream";
+@import "./scss/partials/news-and-events";
+@import "./scss/partials/footer";
+
+// pages
+// -- home
+@import "./scss/pages/home/join-the-conversation";

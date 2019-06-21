@@ -1,0 +1,8 @@
+main {
+    @apply .px-8;
+}
+
+.content__wrap-negative-margin-top {
+    @apply relative;
+    @apply .-mt-40;
+}
