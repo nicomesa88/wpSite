@@ -20,7 +20,7 @@ function resolveApp(relativePath) {
 const paths = {
     appSrc: resolveApp("src"),
     // *** Update this location
-    appBuild: resolveApp("assets"),
+    appBuild: resolveApp("wp-content/themes/Nico/assets"),
     appIndexJs: resolveApp("src/index.js"),
     appNodeModules: resolveApp("node_modules")
 };

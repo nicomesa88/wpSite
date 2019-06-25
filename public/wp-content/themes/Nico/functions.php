@@ -74,6 +74,20 @@
 
     add_filter('upload_mimes', 'cc_mime_types');
 
+//Theme Assets
+
+    add_action("wp_enqueue_scripts", function() {
+        $manifest = json_decode(file_get_contents('assets/assets.json', true));
+        $main = $manifest->main;
+        wp_enqueue_style("theme-css", get_template_directory_uri() . "/assets/" . $main->css,  false, null);
+          wp_register_script( 'theme-js', get_template_directory_uri() . "/assets/" . $main->js, false, null, true );
+          $translation_array = array(
+              'template_directory' => get_template_directory_uri()
+          );
+          wp_localize_script( 'theme-js', 'site_data', $translation_array );
+        wp_enqueue_script("theme-js");
+      }, 100);
+
     // removing link to media default
     function reg_imagelink_setup() {
         $image_set = get_option( 'image_default_link_type' );
