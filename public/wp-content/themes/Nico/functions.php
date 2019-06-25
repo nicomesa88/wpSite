@@ -19,8 +19,8 @@
     define( 'THEME_CSS', THEME_URI . '/assets/dist/styles' );
     define( 'THEME_JS', THEME_URI . '/assets/dist/scripts' );
 
-    include THEME_INCLUDE . '/post-types/hardware.php';
-    include THEME_INCLUDE . '/post-types/case-studies.php';
+    // include THEME_INCLUDE . '/post-types/hardware.php';
+    // include THEME_INCLUDE . '/post-types/case-studies.php';
     // include THEME_INCLUDE . '/events.php';
 
     //
