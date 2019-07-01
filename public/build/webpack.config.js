@@ -93,7 +93,7 @@ module.exports = {
                     "wp-content/themes/**/*.php",
                     "assets/main.css",
                 ],
-                proxy: "http://localhost.ihsm:9999",
+                proxy: "http://nico.local/",
                 open: false,
             })
     ].filter(Boolean)
