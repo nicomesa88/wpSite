@@ -22,22 +22,21 @@ $count = 0;
 	</head>
 	<body <?php body_class(); ?>>
         <header>
-        <h1>This is the header</h1>
-        <nav>
-            <ul>
-                <?php
-                    foreach($menuitems as $item){
-                        $link = $item->url;
-                        $title = $item->title;
-                        $next_item_parent = $menuitems[$count + 1]->menu_item_parent;
+            <nav>
+                <ul>
+                    <?php
+                        foreach($menuitems as $item){
+                            $link = $item->url;
+                            $title = $item->title;
+                            $next_item_parent = $menuitems[$count + 1]->menu_item_parent;
 
-                        if( !$item->menu_item_parent){
-                            $parent_id = $item->ID;
-                            $full_nav = get_field('full_width', $item); ?>
-                            <li class="<?php if($full_nav){ echo'full_menu '; } if(site_url().$_SERVER['REQUEST_URI']==$link){ echo'active'; } ?>"><a href="<?php echo $link; ?>" class="<?php if(site_url().$_SERVER['REQUEST_URI']==$link){ echo'active'; } ?>"><?php echo $title; ?></a>  
-                        <?php } 
-                    }
-                ?>    
-            </ul>
-        </nav>
+                            if( !$item->menu_item_parent){
+                                $parent_id = $item->ID;
+                                $full_nav = get_field('full_width', $item); ?>
+                                <li class="<?php if($full_nav){ echo'full_menu '; } if(site_url().$_SERVER['REQUEST_URI']==$link){ echo'active'; } ?>"><a href="<?php echo $link; ?>" class="<?php if(site_url().$_SERVER['REQUEST_URI']==$link){ echo'active'; } ?>"><?php echo $title; ?></a>  
+                            <?php } 
+                        }
+                    ?>    
+                </ul>
+            </nav>
         </header>
