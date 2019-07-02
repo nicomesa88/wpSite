@@ -1,56 +1,56 @@
-.nav__and__search-container {
-    @apply .flex;
-    @apply .items-center;
-}
+// .nav__and__search-container {
+//     @apply .flex;
+//     @apply .items-center;
+// }
 
-.search__icon-button {
-    @apply .w-10;
-    @apply relative;
-}
+// .search__icon-button {
+//     @apply .w-10;
+//     @apply relative;
+// }
 
-.search__icon-button svg {
-    @apply .w-6;
-}
+// .search__icon-button svg {
+//     @apply .w-6;
+// }
 
-.search__icon-button::after {
-    content: '';
-    @apply absolute;
-    @apply .top-0;
-    @apply .right-0;
-    @apply .block;
-    @apply .bg-mastrichtBlue;
-    @apply .h-full;
-    width: 0.1rem;
-}
+// .search__icon-button::after {
+//     content: '';
+//     @apply absolute;
+//     @apply .top-0;
+//     @apply .right-0;
+//     @apply .block;
+//     @apply .bg-mastrichtBlue;
+//     @apply .h-full;
+//     width: 0.1rem;
+// }
 
-.hamburger__menu-button {
-    width: 30px;
-    @apply .ml-4;
-}
+// .hamburger__menu-button {
+//     width: 30px;
+//     @apply .ml-4;
+// }
 
-.hamburger__menu-button:focus {
-    outline: none;
-}
+// .hamburger__menu-button:focus {
+//     outline: none;
+// }
   
-.hamburger__menu-button:before,
-.hamburger__menu-button:after {
-    @apply .bg-white;
-    @apply .block;
-    content: '';
-    height: 4px;
-    transition: all 0.3s ease-in-out;
-}
+// .hamburger__menu-button:before,
+// .hamburger__menu-button:after {
+//     @apply .bg-white;
+//     @apply .block;
+//     content: '';
+//     height: 4px;
+//     transition: all 0.3s ease-in-out;
+// }
 
-.hamburger__menu-button::before {
-    box-shadow: 0 10px 0 #fff;
-    margin-bottom: 16px;
-}
+// .hamburger__menu-button::before {
+//     box-shadow: 0 10px 0 #fff;
+//     margin-bottom: 16px;
+// }
 
-.hamburger__menu-button.active::before {
-    box-shadow: 0 0 0 #fff;
-    transform: translateY(10px) rotate(45deg);
-}
+// .hamburger__menu-button.active::before {
+//     box-shadow: 0 0 0 #fff;
+//     transform: translateY(10px) rotate(45deg);
+// }
 
-.hamburger__menu-button.active::after {
-    transform: translateY(-10px) rotate(-45deg);
-}
+// .hamburger__menu-button.active::after {
+//     transform: translateY(-10px) rotate(-45deg);
+// }

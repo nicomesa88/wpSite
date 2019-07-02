@@ -77,7 +77,7 @@
 //Theme Assets
 
     add_action("wp_enqueue_scripts", function() {
-        $manifest = json_decode(file_get_contents('assets/assets.json', true));
+        $manifest = json_decode(file_get_contents(THEME_DIRECTORY .'/assets/assets.json', true));
         $main = $manifest->main;
         wp_enqueue_style("theme-css", get_template_directory_uri() . "/assets/" . $main->css,  false, null);
           wp_register_script( 'theme-js', get_template_directory_uri() . "/assets/" . $main->js, false, null, true );
