@@ -12,6 +12,8 @@ $title = get_the_title();
     
     <?php echo the_content(); 
     endWhile;?>
-  
+<?php 
+    get_template_part( 'partials/flexible-content', 'partial' );
+    ?>
 </main>
 <?php get_footer();?>
