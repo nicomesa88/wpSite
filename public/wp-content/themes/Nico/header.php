@@ -21,9 +21,9 @@ $count = 0;
 		<?php wp_head(); ?>
 	</head>
 	<body <?php body_class(); ?>>
-        <header>
-            <nav>
-                <ul>
+        <header class="bg-orange">
+            <nav class="flex-1 ml-auto content-between">
+                <ul class="flex justify-between">
                     <?php
                         foreach($menuitems as $item){
                             $link = $item->url;
