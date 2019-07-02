@@ -4,28 +4,35 @@
 if( have_rows('content') ):
 
      // loop through the rows of data
-    while ( have_rows('content') ) : the_row();
+    while ( have_rows('content') ) : the_row(); ?>
+    
+    <div>
+        <?php if( get_row_layout() == 'text' ):?>
+        <div>
+            <?php the_sub_field('text');
+            the_sub_field('text_2'); ?>
+        </div>
+        <?php endif; ?>
+    </div>
 
-        if( get_row_layout() == 'text' ):
+    <div>
+        <?php if( get_row_layout() == 'image' ): ?>
+        <div>
+            <img src="<?php the_sub_field('image');?>">
+            <?php the_sub_field('caption'); ?>
+        </div>
+        <?php endif; ?>
+    </div>
 
-            the_sub_field('columns');
-            the_sub_field('text');
-            the_sub_field('text_2');
-        endif;
-
-        if( get_row_layout() == 'image' ):
-
-            the_sub_field('image');
-            the_sub_field('caption');
-        endif;
-
-        if( get_row_layout() == 'quote' ):
-
-            the_sub_field('quote');
-            the_sub_field('name');
-        endif;
-
-    endwhile;
+    <div>
+        <?php if( get_row_layout() == 'quote' ): ?>
+        <div>
+            <?php the_sub_field('quote');
+            the_sub_field('name'); ?>
+        </div>
+       <?php endif; ?>
+    </div>
+    <?php endwhile;
 
 else :
 
