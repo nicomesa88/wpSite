@@ -1,4 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,900&display=swap);
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
